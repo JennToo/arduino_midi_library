@@ -166,6 +166,7 @@ public:
     inline Channel  getChannel() const;
     inline DataByte getData1() const;
     inline DataByte getData2() const;
+    inline const MidiMessage& getMessage() const;
     inline const byte* getSysExArray() const;
     inline unsigned getSysExArrayLength() const;
     inline bool check() const;

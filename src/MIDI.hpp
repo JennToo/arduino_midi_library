@@ -1232,6 +1232,12 @@ inline unsigned MidiInterface<Transport, Settings, Platform>::getSysExArrayLengt
     return mMessage.getSysExSize();
 }
 
+template<class Transport, class Settings, class Platform>
+inline const typename MidiInterface<Transport, Settings, Platform>::MidiMessage & MidiInterface<Transport, Settings, Platform>::getMessage() const
+{
+    return mMessage;
+}
+
 /*! \brief Check if a valid message is stored in the structure. */
 template<class Transport, class Settings, class Platform>
 inline bool MidiInterface<Transport, Settings, Platform>::check() const
